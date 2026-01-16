@@ -26,7 +26,9 @@ class ViewController: UIViewController {
     
     @IBAction
     func startSDK(_ sender: UIButton) {
-        IDWise.initialize(clientKey: CLIENT_KEY,theme: IDWiseTheme.systemDefault) { err in
+        IDWise.initialize(clientKey: CLIENT_KEY, theme: IDWiseTheme.systemDefault) {
+            print("SDK is Initialized")
+        } onError: { err in
             // Deal with error here
             if let error = err {
                 self.showCustomAlert(title: "Error \(error.code)", message: error.message, handler: { _ in
@@ -34,7 +36,7 @@ class ViewController: UIViewController {
                 })
             }
         }
-        
+
         let applicantDetails: [String:String] = [
             ApplicantDetailsKeys.FULL_NAME: "John Doe",
             ApplicantDetailsKeys.BIRTH_DATE: "2000-02-01",

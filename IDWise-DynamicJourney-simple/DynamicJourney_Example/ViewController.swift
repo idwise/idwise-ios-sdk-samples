@@ -35,8 +35,16 @@ class ViewController: UIViewController {
             LoadingView.show(message: "Loading...Please Wait")
         }
         
-        IDWiseDynamic.initialize(clientKey: CLIENT_KEY,theme: IDWiseTheme.systemDefault, onError: { _ in })
-        
+        IDWiseDynamic.initialize(clientKey: CLIENT_KEY, theme: IDWiseTheme.systemDefault) {
+            print("SDK is Initialized")
+        } onError: { err in
+            // Deal with error here
+            if let error = err {
+                self.showCustomAlert(title: "Error \(error.code)", message: error.message, handler: { _ in
+
+                })
+            }
+        }
         let applicantDetails: [String:String] = [
             ApplicantDetailsKeys.FULL_NAME: "John Doe",
             ApplicantDetailsKeys.BIRTH_DATE: "2000-02-01",
