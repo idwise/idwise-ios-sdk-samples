@@ -1,25 +1,29 @@
 PODS:
-  - FingerprintPro (2.11.0)
-  - IDWise (6.1.0):
-    - FingerprintPro (= 2.11.0)
-    - Shield-Ptr (= 1.5.52)
-  - Shield-Ptr (1.5.52)
+  - FingerprintPro (2.13.0)
+  - IDWise (6.9.2):
+    - FingerprintPro (= 2.13.0)
+    - OpenSSL-Universal (= 3.3.1000)
+    - Shield-Ptr (= 1.5.57)
+  - OpenSSL-Universal (3.3.1000)
+  - Shield-Ptr (1.5.57)
 
 DEPENDENCIES:
-  - IDWise (= 6.1.0)
+  - IDWise (= 6.9.2)
 
 SPEC REPOS:
   https://github.com/idwise/ios-sdk:
     - IDWise
   trunk:
     - FingerprintPro
+    - OpenSSL-Universal
     - Shield-Ptr
 
 SPEC CHECKSUMS:
-  FingerprintPro: 2fbd0cda75fbab32055f7cb38bc5fc9d17168979
-  IDWise: 6598e57740f48d8766391864a8a43f6cab3d86cb
-  Shield-Ptr: ce1ee77d9fc157707bba10f43f0a9ce08260ae8e
+  FingerprintPro: 2f419138022451a72f783db9c94967f5a68e9977
+  IDWise: 8de73515b6ee13580a42dae888e2ffbafe4ae66b
+  OpenSSL-Universal: 57f92a826947ee3183556bf5e22d7dff8d55f834
+  Shield-Ptr: 0c49d80f465a7d6fd8ecd2930a9eefab3adc2962
 
-PODFILE CHECKSUM: 33d3d975b173c69f2c35222188a524fc1250ce9a
+PODFILE CHECKSUM: a37f1b640693cd07800df6c2a3ff610797b7e7b0
 
 COCOAPODS: 1.16.2
