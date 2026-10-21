@@ -40,6 +40,9 @@ class ViewController: UIViewController {
         } onError: { err in
             // Deal with error here
             if let error = err {
+                DispatchQueue.main.async {
+                    LoadingView.hide()
+                }
                 self.showCustomAlert(title: "Error \(error.code)", message: error.message, handler: { _ in
 
                 })
