@@ -1,0 +1,41 @@
+PODS:
+  - DocumentReader (9.5.6487):
+    - RegulaCommon (= 9.5.2372)
+  - DocumentReaderMRZRFID (9.5.18276)
+  - FingerprintPro (2.13.0)
+  - IDWiseNFC (6.9.8):
+    - DocumentReader
+    - DocumentReaderMRZRFID
+    - FingerprintPro (= 2.13.0)
+    - OpenSSL-Universal (= 3.3.1000)
+    - Shield-Ptr (= 1.5.57)
+  - OpenSSL-Universal (3.3.1000)
+  - RegulaCommon (9.5.2372)
+  - Shield-Ptr (1.5.57)
+
+DEPENDENCIES:
+  - IDWiseNFC (= 6.9.8)
+
+SPEC REPOS:
+  https://github.com/idwise/ios-sdk-nfc:
+    - IDWiseNFC
+  trunk:
+    - DocumentReader
+    - DocumentReaderMRZRFID
+    - FingerprintPro
+    - OpenSSL-Universal
+    - RegulaCommon
+    - Shield-Ptr
+
+SPEC CHECKSUMS:
+  DocumentReader: c26659a65931361b411bf9dcf6496244d4e0a4d1
+  DocumentReaderMRZRFID: ab3c86b45c344ec4b0f350bd5ad13730a7d72b45
+  FingerprintPro: 2f419138022451a72f783db9c94967f5a68e9977
+  IDWiseNFC: 89b2c41d3ab7d1d5a46d5d1b35bc7db2153405a7
+  OpenSSL-Universal: 57f92a826947ee3183556bf5e22d7dff8d55f834
+  RegulaCommon: bc15eb45e411fad70b17e1e37406a43ddfbc73c7
+  Shield-Ptr: 0c49d80f465a7d6fd8ecd2930a9eefab3adc2962
+
+PODFILE CHECKSUM: 836ee5d97b6ba2c8c869fea1e74611b4a8b9a260
+
+COCOAPODS: 1.16.2
